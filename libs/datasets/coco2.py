@@ -407,7 +407,7 @@ if __name__ == '__main__':
         input, Targets, inst_masks, masks, downsampled_masks, gt_boxes, image_ids = batch
         input, Targets, inst_masks, masks, downsampled_masks = \
             tensor2numpy([input, Targets, inst_masks, masks, downsampled_masks])
-        print input.shape, Targets[0].shape, Targets[1].shape, masks.shape
+        print(input.shape, Targets[0].shape, Targets[1].shape, masks.shape)
         n, c, h, w = input.shape
         print (downsampled_masks[0].shape)
         for i in range(n):
